@@ -9,7 +9,7 @@ if ($_FILES["file"]["name"] != '') {
     echo '<embed src="file/' . $location . '" width="100%" height="100%" class="img-thumbnail" style="margin-top:10px"/>';
     echo '
         <form action="kompres.php" method="POST" enctype="multipart/form-data">
-            <input type="hidden" value="' . $location . '" name="file-compress">
+            <input type="hidden" value="' . $name . '" name="file-compress">
             <button class="btn btn-info btn-block" name="compress">Compress</button>
         </form>
     ';
