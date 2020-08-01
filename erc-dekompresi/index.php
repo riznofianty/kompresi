@@ -1,5 +1,3 @@
-<?php
-?>
 <!Doctype html>
 <html lang="en">
 
@@ -28,6 +26,14 @@
         cursor: pointer;
         opacity: 0;
         filter: alpha(opacity=0);
+    }
+    .button3 {
+        width: 100%;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.19);
+        padding: 10px 30px;
+        font-size: 20px;
+        background-color: #2748B2;
+        border: none;
     }
 </style>
 
@@ -58,14 +64,14 @@
                         <div class="col-lg-12">
                             <div class="main-card mb-3 card">
                                 <div class="card-header mt-2 mb-2 text-center">
-                                    <h2>Upload File</h2>
+                                    <h3>Upload File ER</h3>
                                 </div>
                                 <div class="card-body">
                                     <div class="position-relative row form-group">
                                         <div class="col-sm-12">
-                                            <div class="fileUpload btn btn-info text-center">
-                                                <span>Upload</span>
-                                                <input name="file" id="file" type="file" class="form-control-file upload text-center" accept=".txt" required>
+                                            <div class="fileUpload btn btn-info text-center button3">
+                                                <span>Pilih File .ER</span>
+                                                <input name="file" id="file" type="file" class="form-control-file upload text-center" accept=".ER" required>
                                             </div>
                                             <span id="uploaded_file"></span>
                                             
@@ -88,14 +94,14 @@
                 var name = document.getElementById("file").files[0].name;
                 var form_data = new FormData();
                 var ext = name.split('.').pop().toLowerCase();
-                if (jQuery.inArray(ext, ['txt']) == -1) {
+                if (jQuery.inArray(ext, ['er']) == -1) {
                     alert("Invalid File");
                 }
                 var oFReader = new FileReader();
                 oFReader.readAsDataURL(document.getElementById("file").files[0]);
                 var f = document.getElementById("file").files[0];
                 var fsize = f.size || f.fileSize;
-                if (fsize > 2000000) {
+                if (fsize > 20000000) {
                     alert("File Size is very big");
                 } else {
                     form_data.append("file", document.getElementById('file').files[0]);

@@ -29,6 +29,17 @@
         opacity: 0;
         filter: alpha(opacity=0);
     }
+    .button3 {
+        width: 100%;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.19);
+        padding: 10px 30px;
+        font-size: 20px;
+        background-color: #2748B2;
+        border: none;
+    }
+    .h3{
+        text-align:center;
+    }
 </style>
 
 <body>
@@ -57,17 +68,17 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="main-card mb-3 card">
-                                <div class="card-header mt-2 mb-2 text-center">
-                                    <h2><center>Kompres File TXT</center></h2>
+                                <div class="card-header mt-2 mb-2 txtUpload">
+                                    <h3>Upload File TXT</h3>
                                 </div>
                                 <div class="card-body">
                                     <div class="position-relative row form-group">
-                                        <div class="col-sm-12">
-                                            <div class="fileUpload btn btn-info text-center">
+                                       <div class="col-sm-12">
+                                           <div class="fileUpload btn btn-info text-center button3">
                                                 <span>Pilih File TXT</span>
                                                 <input name="file" id="file" type="file" class="form-control-file upload text-center" accept=".txt" required>
                                             </div>
-                                            <span id="uploaded_file"></span>
+                                           <span id="uploaded_file"></span>
                                             
                                         </div>
                                     </div>
@@ -95,7 +106,7 @@
                 oFReader.readAsDataURL(document.getElementById("file").files[0]);
                 var f = document.getElementById("file").files[0];
                 var fsize = f.size || f.fileSize;
-                if (fsize > 2000000) {
+                if (fsize > 1000000) {
                     alert("File Size is very big");
                 } else {
                     form_data.append("file", document.getElementById('file').files[0]);

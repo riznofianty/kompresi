@@ -30,13 +30,19 @@
                                             <button type="button" data-toggle="collapse" data-target="#collapseOne1"
                                                 aria-expanded="true" aria-controls="collapseOne"
                                                 class="text-left m-0 p-0 btn btn-link btn-block">
-                                                <h5 class="m-0 p-0"><i class="metismenu-icon pe-7s-info">  Informasi Sistem</i></h5>
+                                                <h5 class="m-0 p-0"><i class="metismenu-icon pe-7s-info"> Beranda</i></h5>
                                             </button>
                                         </div>
                                         <div data-parent="#accordion" id="collapseOne1" aria-labelledby="headingOne"
                                             class="collapse show">
-                                            <div class="card-body">Terdiri dari beberapa konten, yaitu halaman panduan pengguna dan halaman informasi penulis.
+                                            <div class="card-body">Terdiri dari beberapa Tentang, yaitu halaman Panduan Pengguna dan halaman Tentang.<br><br>
+                                            <b>Halaman Panduan Pengguna</b><br>
+                                            Berisi keterangan mengenai deskripsi setiap menu yang ada pada sistem beserta tahapan penggunaannya.<br><br>
+                                            <b>Halaman Tentang</b><br>
+                                            Berisi informasi data penulis.
+
                                             </div>
+
                                         </div>
                                     </div>
                                     <div class="card">
